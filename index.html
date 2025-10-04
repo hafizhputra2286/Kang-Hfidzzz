@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kang Hfidzzz Official</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      color: #333;
+      background: #fafafa;
+    }
+
+    header {
+      background: #1e88e5;
+      color: white;
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 22px;
+    }
+
+    header nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    header nav a:hover {
+      color: #ff9800;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url('https://picsum.photos/1200/500') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+      overflow: hidden;
+    }
+
+    .hero h2, .hero p, .btn {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 1s forwards;
+    }
+
+    .hero h2 { animation-delay: 0.3s; font-size: 38px; margin-bottom: 15px; }
+    .hero p { animation-delay: 0.6s; font-size: 18px; margin-bottom: 30px; }
+    .btn { animation-delay: 0.9s; }
+
+    @keyframes fadeUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .btn {
+      background: #ff9800;
+      padding: 12px 25px;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #e68900;
+      transform: scale(1.05);
+    }
+
+    section {
+      padding: 50px 20px;
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #1e88e5;
+    }
+
+    .about, .skills, .contact, .biodata {
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .skills-list {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: linear-gradient(135deg, #1e88e5, #42a5f5);
+      color: white;
+      font-weight: bold;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      width: 200px;
+      text-align: center;
+      cursor: pointer;
+      transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px) scale(1.05);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+      background: linear-gradient(135deg, #42a5f5, #1e88e5);
+    }
+
+    #skill-description {
+      margin-top: 30px;
+      font-size: 16px;
+      color: #333;
+      transition: all 0.3s;
+    }
+
+    .bio-table {
+      width: 100%;
+      max-width: 700px;
+      margin: auto;
+      border-collapse: collapse;
+    }
+
+    .bio-table th,
+    .bio-table td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+
+    .bio-table th {
+      background: #f0f0f0;
+      width: 200px;
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    footer a {
+      color: #ff9800;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      header { flex-direction: column; text-align: center; }
+      header nav { margin-top: 10px; }
+      .hero h2 { font-size: 28px; }
+      .hero p { font-size: 16px; }
+      .skills-list { flex-direction: column; gap: 20px; align-items: center; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Kang Hfidzzz 🚀</h1>
+    <nav>
+      <a href="#about">Tentang</a>
+      <a href="#biodata">Biodata</a>
+      <a href="#skills">Keahlian</a>
+      <a href="#contact">Kontak</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h2>Halo, Saya Kang Hfidzzz 👋</h2>
+    <p>Pelajar | Ngoding | Calon Programmer Hebat</p>
+    <a href="#contact" class="btn">Hubungi Saya</a>
+  </section>
+
+  <!-- Tentang -->
+  <section id="about" class="about">
+    <h2>Tentang Saya</h2>
+    <p>
+      Saya Kang Hfidzzz, pelajar yang semangat belajar teknologi & pemrograman.  
+      Tujuan saya jadi programmer profesional sambil terus berkarya! 💻
+    </p>
+  </section>
+
+  <!-- Biodata -->
+  <section id="biodata" class="biodata">
+    <h2>Biodata Lengkap</h2>
+    <table class="bio-table">
+      <tr><th>Nama Lengkap</th><td>Kang Hfidzzz</td></tr>
+      <tr><th>Tempat, Tanggal Lahir</th><td>Madiun, 22 Desember 2009</td></tr>
+      <tr><th>Alamat</th><td>Jl. Soekarno Hatta No. 50, Madiun</td></tr>
+      <tr><th>Sekolah</th><td>SMK BP Subulul Huda</td></tr>
+      <tr><th>Cita-cita</th><td>Programmer Profesional</td></tr>
+      <tr><th>Hobi</th><td>Ngoding & Main Game</td></tr>
+      <tr><th>Makanan Favorit</th><td>Nasi Goreng</td></tr>
+      <tr><th>Minuman Favorit</th><td>Es Teh Manis</td></tr>
+      <tr><th>Game Favorit</th><td>Free Fire</td></tr>
+    </table>
+  </section>
+
+  <!-- Keahlian -->
+  <section id="skills" class="skills">
+    <h2>Keahlian</h2>
+    <div class="skills-list">
+      <div class="card" onclick="showSkill('ngoding')">💻 Ngoding</div>
+      <div class="card" onclick="showSkill('java')">☕ Java Dasar</div>
+      <div class="card" onclick="showSkill('htmlcss')">🌐 HTML & CSS</div>
+    </div>
+    <div id="skill-description"></div>
+  </section>
+
+  <!-- Kontak -->
+  <section id="contact" class="contact">
+    <h2>Kontak</h2>
+    <p>📸 Instagram: <a href="https://instagram.com/ibn_fadlillh" target="_blank">@ibn_fadlillh</a></p>
+    <p>📱 WhatsApp: <a href="https://wa.me/6285962906768" target="_blank">085962906768</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Kang Hfidzzz | Landing Page Pribadi</p>
+    <p>
+      <a href="https://instagram.com/ibn_fadlillh" target="_blank">📸 Instagram</a> |
+      <a href="https://wa.me/6285962906768" target="_blank">📱 WhatsApp</a>
+    </p>
+  </footer>
+
+  <!-- Script Interaktif Keahlian -->
+  <script>
+    function showSkill(skill) {
+      const desc = document.getElementById('skill-description');
+      if(skill === 'ngoding') {
+        desc.innerHTML = "💻 Ngoding: Bisa membuat program dasar, memahami logika, dan menyelesaikan problem kecil dengan coding.";
+      } else if(skill === 'java') {
+        desc.innerHTML = "☕ Java Dasar: Menguasai sintaks Java, tipe data, kontrol alur, dan pembuatan aplikasi sederhana.";
+      } else if(skill === 'htmlcss') {
+        desc.innerHTML = "🌐 HTML & CSS: Mampu membuat tampilan website responsif, styling dengan CSS, dan layout modern.";
+      }
+    }
+  </script>
+</body>
+</html>
